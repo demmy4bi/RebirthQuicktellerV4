@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NerveSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="NerveTest2(failed)" verbose="0">
+    <classes>
+      <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithEmail">
+        <methods>
+          <include name="check2"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.rebirthQuickteller.TestCases.ValidateLoginWithEmail -->
+    </classes>
+  </test> <!-- NerveTest2(failed) -->
+</suite> <!-- Failed suite [NerveSuite] -->

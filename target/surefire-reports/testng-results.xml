@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[=====Chrome Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields!!!]]>
+    </line>
+    <line>
+      <![CDATA[Sign In with PhoneNumber button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[phoneNumber entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields started!!!]]>
+    </line>
+    <line>
+      <![CDATA[phoneNumber entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to perform login with valid credentials started!!!]]>
+    </line>
+    <line>
+      <![CDATA[phoneNumber entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to perform login with valid credentials completed succesfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Chrome Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with  invalid email and a valid password fields started!!!]]>
+    </line>
+    <line>
+      <![CDATA[emailAddress entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with  invalid email and a valid password fields completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with  valid email and a wrong password fields started!!!]]>
+    </line>
+    <line>
+      <![CDATA[emailAddress entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to verify user can't login with  valid email and invalid password fields is completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to perform login with valid credentials started!!!]]>
+    </line>
+    <line>
+      <![CDATA[emailAddress entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[Password entered successfully]]>
+    </line>
+    <line>
+      <![CDATA[SignIn button clicked successfully]]>
+    </line>
+    <line>
+      <![CDATA[Test to perform login with valid credentials completed succesfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-04-06T12:03:28Z" name="rebirthQuicktellerSuite" finished-at="2023-04-06T12:05:15Z" duration-ms="106350">
+    <groups>
+    </groups>
+    <test started-at="2023-04-06T12:03:28Z" name="Validate Login with Email" finished-at="2023-04-06T12:04:28Z" duration-ms="59626">
+      <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:28Z" name="setUp" finished-at="2023-04-06T12:03:41Z" duration-ms="12824" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Chrome Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Check1()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:41Z" name="Check1" description="This test case will verify user can&#039;t login with wrong phonenumber and a valid password fields" finished-at="2023-04-06T12:03:56Z" duration-ms="15070" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields!!!]]>
+            </line>
+            <line>
+              <![CDATA[Sign In with PhoneNumber button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[phoneNumber entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Check1 -->
+        <test-method signature="Check2()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:56Z" name="Check2" description="This test case will verify user can&#039;t login with valid phonenumber and a wrong password fields" finished-at="2023-04-06T12:04:14Z" duration-ms="17996" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields started!!!]]>
+            </line>
+            <line>
+              <![CDATA[phoneNumber entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Check2 -->
+        <test-method signature="SignInPhonenumber()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:04:14Z" name="SignInPhonenumber" description="This TestCase will perform login with valid credentials " finished-at="2023-04-06T12:04:28Z" duration-ms="13596" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to perform login with valid credentials started!!!]]>
+            </line>
+            <line>
+              <![CDATA[phoneNumber entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to perform login with valid credentials completed succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SignInPhonenumber -->
+        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:04:28Z" name="terminateSession" finished-at="2023-04-06T12:04:28Z" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber -->
+    </test> <!-- Validate Login with Email -->
+    <test started-at="2023-04-06T12:04:28Z" name="Sign In with phonenumber" finished-at="2023-04-06T12:05:15Z" duration-ms="46631">
+      <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithEmail">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:28Z" name="setUp" finished-at="2023-04-06T12:04:36Z" duration-ms="7436" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Chrome Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="check1()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:36Z" name="check1" description="This test case will verify user can&#039;t login with  invalid email and a valid password fields" finished-at="2023-04-06T12:04:49Z" duration-ms="12888" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to verify user can't login with  invalid email and a valid password fields started!!!]]>
+            </line>
+            <line>
+              <![CDATA[emailAddress entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to verify user can't login with  invalid email and a valid password fields completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- check1 -->
+        <test-method signature="check2()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:49Z" name="check2" description="This test case will verify user can&#039;t login with  valid email and a wrong password fields" finished-at="2023-04-06T12:05:02Z" duration-ms="13692" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to verify user can't login with  valid email and a wrong password fields started!!!]]>
+            </line>
+            <line>
+              <![CDATA[emailAddress entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to verify user can't login with  valid email and invalid password fields is completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- check2 -->
+        <test-method signature="SigninEmail()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:05:02Z" name="SigninEmail" description="This TestCase will perform login with valid credentials" finished-at="2023-04-06T12:05:15Z" duration-ms="12509" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test to perform login with valid credentials started!!!]]>
+            </line>
+            <line>
+              <![CDATA[emailAddress entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[Password entered successfully]]>
+            </line>
+            <line>
+              <![CDATA[SignIn button clicked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Test to perform login with valid credentials completed succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SigninEmail -->
+        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:05:15Z" name="terminateSession" finished-at="2023-04-06T12:05:15Z" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.rebirthQuickteller.TestCases.ValidateLoginWithEmail -->
+    </test> <!-- Sign In with phonenumber -->
+  </suite> <!-- rebirthQuicktellerSuite -->
+</testng-results>

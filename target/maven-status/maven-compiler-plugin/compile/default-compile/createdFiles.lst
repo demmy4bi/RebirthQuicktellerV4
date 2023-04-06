@@ -1,0 +1,4 @@
+com\rebirthQuickteller\TestCases\ValidateLoginWithGoogle.class
+com\rebirthQuickteller\TestCases\forgotPassword.class
+com\rebirthQuickteller\TestCases\ValidateLoginWithPhoneNumber.class
+com\rebirthQuickteller\TestCases\ValidateLoginWithEmail.class
