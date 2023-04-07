@@ -21,7 +21,7 @@ public class ValidateLoginWithPhoneNumber extends TestBase {
 	String expectederrormessage2 = "Incorrect password. 3 attempts remaining.";
 
 	@Test(priority = 3, description = "This TestCase will perform login with valid credentials ")
-	public void SignInPhonenumber() throws IOException, InterruptedException {
+	public void ValidCredential_phoneNumberLoginTest() throws IOException, InterruptedException {
 
 		Reporter.log("Test to perform login with valid credentials started!!!", true);
 
@@ -61,29 +61,13 @@ public class ValidateLoginWithPhoneNumber extends TestBase {
 
 		// ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,88)");
 		
-		/*
-		 * System.out.println("valid Login  " + driver.getTitle());
-		 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 */
-
-		// actualSignInurl driver.getCurrentUrl()
-		
-		/*
-		 * String expURL = "https://rebirth.quickteller.com/dashboard"; Boolean
-		 * responses = Assertions.ValidateUrl(driver, expURL);
-		 * System.out.println("Get URL is" + responses); Thread.sleep(4000);
-		 * 
-		 * 
-		 * Reporter.
-		 * log("Test to perform login with valid credentials completed successfully",
-		 * true);
-		 */
+		 
 		
 
 	}
 
 	@Test(priority = 1, description = "This test case will verify user can't login with wrong phonenumber and a valid password fields")
-	void Check1() throws IOException, InterruptedException {
+	void WrongPhonenumber_ValidPassword_phoneNumberLoginTest() throws IOException, InterruptedException {
 
 		Reporter.log("Test to verify user can't login with wrong phonenumber and a valid password fields!!!", true);
 
@@ -131,7 +115,7 @@ public class ValidateLoginWithPhoneNumber extends TestBase {
 	}
 
 	@Test(priority = 2, description = "This test case will verify user can't login with valid phonenumber and a wrong password fields")
-	void Check2() throws IOException, InterruptedException {
+	void ValidPhonenumber_WrongPassword_phoneNumberLoginTest() throws IOException, InterruptedException {
 		Reporter.log("Test to verify user can't login with valid phonenumber and a wrong password fields started!!!",
 				true);
 

@@ -62,7 +62,7 @@
       <![CDATA[=====Application Started=====]]>
     </line>
     <line>
-      <![CDATA[Test to verify user can't login with  invalid email and a valid password fields started!!!]]>
+      <![CDATA[Test to verify user can't login with  wrong email and a valid password fields started!!!]]>
     </line>
     <line>
       <![CDATA[emailAddress entered successfully]]>
@@ -74,7 +74,7 @@
       <![CDATA[SignIn button clicked successfully]]>
     </line>
     <line>
-      <![CDATA[Test to verify user can't login with  invalid email and a valid password fields completed successfully]]>
+      <![CDATA[Test to verify user can't login with  wrong email and a valid password fields completed successfully]]>
     </line>
     <line>
       <![CDATA[Test to verify user can't login with  valid email and a wrong password fields started!!!]]>
@@ -107,12 +107,12 @@
       <![CDATA[Test to perform login with valid credentials completed succesfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-04-06T12:03:28Z" name="rebirthQuicktellerSuite" finished-at="2023-04-06T12:05:15Z" duration-ms="106350">
+  <suite started-at="2023-04-07T07:35:15Z" name="rebirthQuicktellerSuite" finished-at="2023-04-07T07:37:07Z" duration-ms="112798">
     <groups>
     </groups>
-    <test started-at="2023-04-06T12:03:28Z" name="Validate Login with Email" finished-at="2023-04-06T12:04:28Z" duration-ms="59626">
+    <test started-at="2023-04-07T07:35:15Z" name="Validate Login with Email" finished-at="2023-04-07T07:36:23Z" duration-ms="68109">
       <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:28Z" name="setUp" finished-at="2023-04-06T12:03:41Z" duration-ms="12824" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@602e0143]" started-at="2023-04-07T07:35:15Z" name="setUp" finished-at="2023-04-07T07:35:40Z" duration-ms="25473" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Chrome Browser Session Started=====]]>
@@ -122,7 +122,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Check1()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:41Z" name="Check1" description="This test case will verify user can&#039;t login with wrong phonenumber and a valid password fields" finished-at="2023-04-06T12:03:56Z" duration-ms="15070" status="PASS">
+        <test-method signature="WrongPhonenumber_ValidPassword_phoneNumberLoginTest()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@602e0143]" started-at="2023-04-07T07:35:40Z" name="WrongPhonenumber_ValidPassword_phoneNumberLoginTest" description="This test case will verify user can&#039;t login with wrong phonenumber and a valid password fields" finished-at="2023-04-07T07:35:55Z" duration-ms="14681" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields!!!]]>
@@ -143,8 +143,8 @@
               <![CDATA[Test to verify user can't login with wrong phonenumber and a valid password fields completed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Check1 -->
-        <test-method signature="Check2()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:03:56Z" name="Check2" description="This test case will verify user can&#039;t login with valid phonenumber and a wrong password fields" finished-at="2023-04-06T12:04:14Z" duration-ms="17996" status="PASS">
+        </test-method> <!-- WrongPhonenumber_ValidPassword_phoneNumberLoginTest -->
+        <test-method signature="ValidPhonenumber_WrongPassword_phoneNumberLoginTest()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@602e0143]" started-at="2023-04-07T07:35:55Z" name="ValidPhonenumber_WrongPassword_phoneNumberLoginTest" description="This test case will verify user can&#039;t login with valid phonenumber and a wrong password fields" finished-at="2023-04-07T07:36:09Z" duration-ms="14512" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields started!!!]]>
@@ -162,8 +162,8 @@
               <![CDATA[Test to verify user can't login with valid phonenumber and a wrong password fields completed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Check2 -->
-        <test-method signature="SignInPhonenumber()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:04:14Z" name="SignInPhonenumber" description="This TestCase will perform login with valid credentials " finished-at="2023-04-06T12:04:28Z" duration-ms="13596" status="PASS">
+        </test-method> <!-- ValidPhonenumber_WrongPassword_phoneNumberLoginTest -->
+        <test-method signature="ValidCredential_phoneNumberLoginTest()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@602e0143]" started-at="2023-04-07T07:36:09Z" name="ValidCredential_phoneNumberLoginTest" description="This TestCase will perform login with valid credentials " finished-at="2023-04-07T07:36:23Z" duration-ms="13348" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test to perform login with valid credentials started!!!]]>
@@ -181,16 +181,16 @@
               <![CDATA[Test to perform login with valid credentials completed succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SignInPhonenumber -->
-        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@5a755cc1]" started-at="2023-04-06T12:04:28Z" name="terminateSession" finished-at="2023-04-06T12:04:28Z" duration-ms="105" status="PASS">
+        </test-method> <!-- ValidCredential_phoneNumberLoginTest -->
+        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber@602e0143]" started-at="2023-04-07T07:36:23Z" name="terminateSession" finished-at="2023-04-07T07:36:23Z" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateSession -->
       </class> <!-- com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber -->
     </test> <!-- Validate Login with Email -->
-    <test started-at="2023-04-06T12:04:28Z" name="Sign In with phonenumber" finished-at="2023-04-06T12:05:15Z" duration-ms="46631">
+    <test started-at="2023-04-07T07:36:23Z" name="Sign In with phonenumber" finished-at="2023-04-07T07:37:07Z" duration-ms="44608">
       <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithEmail">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:28Z" name="setUp" finished-at="2023-04-06T12:04:36Z" duration-ms="7436" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@6bffbc6d]" started-at="2023-04-07T07:36:23Z" name="setUp" finished-at="2023-04-07T07:36:29Z" duration-ms="6141" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Chrome Browser Session Started=====]]>
@@ -200,10 +200,10 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="check1()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:36Z" name="check1" description="This test case will verify user can&#039;t login with  invalid email and a valid password fields" finished-at="2023-04-06T12:04:49Z" duration-ms="12888" status="PASS">
+        <test-method signature="WrongEmail_ValidPassword_EmailLoginTest()[pri:1, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@6bffbc6d]" started-at="2023-04-07T07:36:29Z" name="WrongEmail_ValidPassword_EmailLoginTest" description="This test case will verify user can&#039;t login with  wrong email and a valid password fields" finished-at="2023-04-07T07:36:41Z" duration-ms="12471" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Test to verify user can't login with  invalid email and a valid password fields started!!!]]>
+              <![CDATA[Test to verify user can't login with  wrong email and a valid password fields started!!!]]>
             </line>
             <line>
               <![CDATA[emailAddress entered successfully]]>
@@ -215,11 +215,11 @@
               <![CDATA[SignIn button clicked successfully]]>
             </line>
             <line>
-              <![CDATA[Test to verify user can't login with  invalid email and a valid password fields completed successfully]]>
+              <![CDATA[Test to verify user can't login with  wrong email and a valid password fields completed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- check1 -->
-        <test-method signature="check2()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:04:49Z" name="check2" description="This test case will verify user can&#039;t login with  valid email and a wrong password fields" finished-at="2023-04-06T12:05:02Z" duration-ms="13692" status="PASS">
+        </test-method> <!-- WrongEmail_ValidPassword_EmailLoginTest -->
+        <test-method signature="ValidEmail_InvalidPassword_EmailLoginTest()[pri:2, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@6bffbc6d]" started-at="2023-04-07T07:36:41Z" name="ValidEmail_InvalidPassword_EmailLoginTest" description="This test case will verify user can&#039;t login with  valid email and a wrong password fields" finished-at="2023-04-07T07:36:55Z" duration-ms="13639" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test to verify user can't login with  valid email and a wrong password fields started!!!]]>
@@ -237,8 +237,8 @@
               <![CDATA[Test to verify user can't login with  valid email and invalid password fields is completed successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- check2 -->
-        <test-method signature="SigninEmail()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:05:02Z" name="SigninEmail" description="This TestCase will perform login with valid credentials" finished-at="2023-04-06T12:05:15Z" duration-ms="12509" status="PASS">
+        </test-method> <!-- ValidEmail_InvalidPassword_EmailLoginTest -->
+        <test-method signature="ValidCredentials_EmailLoginTest()[pri:3, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@6bffbc6d]" started-at="2023-04-07T07:36:55Z" name="ValidCredentials_EmailLoginTest" description="This TestCase will perform login with valid credentials" finished-at="2023-04-07T07:37:07Z" duration-ms="12297" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test to perform login with valid credentials started!!!]]>
@@ -256,8 +256,8 @@
               <![CDATA[Test to perform login with valid credentials completed succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- SigninEmail -->
-        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@2b76ff4e]" started-at="2023-04-06T12:05:15Z" name="terminateSession" finished-at="2023-04-06T12:05:15Z" duration-ms="104" status="PASS">
+        </test-method> <!-- ValidCredentials_EmailLoginTest -->
+        <test-method is-config="true" signature="terminateSession()[pri:0, instance:com.rebirthQuickteller.TestCases.ValidateLoginWithEmail@6bffbc6d]" started-at="2023-04-07T07:37:07Z" name="terminateSession" finished-at="2023-04-07T07:37:07Z" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateSession -->

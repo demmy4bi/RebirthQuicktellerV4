@@ -21,10 +21,10 @@ public class ValidateLoginWithEmail extends TestBase {
 	String expectederrormessage = "This email is not registered to an account";
 	String expectederrormessage2 = "Incorrect password. 3 attempts remaining.";
 
-	@Test(priority = 1, description = "This test case will verify user can't login with  invalid email and a valid password fields")
-	void check1() throws IOException, InterruptedException {
+	@Test(priority = 1, description = "This test case will verify user can't login with  wrong email and a valid password fields")
+	void WrongEmail_ValidPassword_EmailLoginTest() throws IOException, InterruptedException {
 
-		Reporter.log("Test to verify user can't login with  invalid email and a valid password fields started!!!",true);
+		Reporter.log("Test to verify user can't login with  wrong email and a valid password fields started!!!",true);
 		
 		
 		// Enter Username
@@ -61,14 +61,14 @@ public class ValidateLoginWithEmail extends TestBase {
 		System.out.println("Test Passed");
 
 		Reporter.log(
-				"Test to verify user can't login with  invalid email and a valid password fields completed successfully",
+				"Test to verify user can't login with  wrong email and a valid password fields completed successfully",
 				true);
 		Thread.sleep(3000);
 
 	}
 
 	@Test(priority = 2, description = "This test case will verify user can't login with  valid email and a wrong password fields")
-	void check2() throws IOException, InterruptedException {
+	void ValidEmail_InvalidPassword_EmailLoginTest() throws IOException, InterruptedException {
 		Reporter.log("Test to verify user can't login with  valid email and a wrong password fields started!!!",true);
 		
 		
@@ -113,7 +113,7 @@ public class ValidateLoginWithEmail extends TestBase {
 	}
 
 	@Test(priority = 3, description = "This TestCase will perform login with valid credentials")
-	public void SigninEmail() throws IOException, InterruptedException {
+	public void ValidCredentials_EmailLoginTest() throws IOException, InterruptedException {
 
 		Reporter.log("Test to perform login with valid credentials started!!!",true);
 		
