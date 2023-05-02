@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
  <suite name="rebirthQuicktellerSuite">
-  <test name="Validate Login with phoneNumber" preserve-order="true">
+	 
+	 <listeners>
+		<listener class-name="com.rebirthQuickteller.ExtentReport.ExtentReportListener" />
+	</listeners>
+	 
+  <test name="Validate Login" preserve-order="true">
     <classes>
-     <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithPhoneNumber"/>
-    </classes>
-  </test> <!-- Test -->
-   <test name="Validate Login with Email" preserve-order="true">
-    <classes>
-     <class name="com.rebirthQuickteller.TestCases.ValidateLoginWithEmail"/>
-    </classes>
+     <class name="com.rebirthQuickteller.TestCases.SignUp"/>
+    </classes>	
   </test> <!-- Test -->
 </suite> <!-- Suite -->

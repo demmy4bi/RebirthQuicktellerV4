@@ -1,8 +1,10 @@
 package com.rebirthQuickteller.base;
 
+import static com.rebirthQuickteller.base.TestBase.faker;
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	public static WebDriver driver;
 	public String projectPath = System.getProperty("user.dir");
+	static Faker faker = new Faker();
 
 	@BeforeClass
 	public void setUp() throws IOException {
@@ -35,12 +38,13 @@ public class TestBase {
 				
 				  WebDriverManager.chromedriver().setup();
 				  
-				 // driver = new ChromeDriver();
+				  driver = new ChromeDriver();
 				  
 				  //Run in headless mode
-					
-					  ChromeOptions options = new ChromeOptions();
-					  options.addArguments("--headless"); driver = new ChromeDriver(options);
+					/*
+					 * ChromeOptions options = new ChromeOptions();
+					 * options.addArguments("--headless"); driver = new ChromeDriver(options);
+					 */
 					 
 				 
 			Reporter.log("=====Chrome Browser Session Started=====", true);
@@ -127,6 +131,43 @@ public class TestBase {
 		chooseElement(Locator).sendKeys(Utility.fetchLocator(Value));
 	}
 
+	
+	  public static String RandomNigeriaPhoneGenerator() {
+		  
+		 // return faker.phoneNumber().cellPhone();
+		  Faker faker = new Faker();
+	        String phoneNumber = "0805" + faker.number().digits(7);
+	        return phoneNumber;
+		  
+	  }
+	  
+	  
+	  public static String randomEmail() {
+
+	        return faker.internet().emailAddress();
+	    }
+
+	  public static String randomFirstName() {
+
+	        return faker.name().firstName();
+	    }
+
+	    public static String randomLastName() {
+
+	        return faker.name().lastName();
+	    }
+
+	    public static String randomName() {
+
+	        return faker.name().name();
+	    }
+	  
+	 
+	
+ 
+	
+	
+	
 	@AfterClass
 	public void terminateSession() {
 

@@ -1,4 +1,7 @@
+pages\SignUpPageObjects.class
 com\rebirthQuickteller\TestCases\ValidateLoginWithGoogle.class
-com\rebirthQuickteller\TestCases\forgotPassword.class
-com\rebirthQuickteller\TestCases\ValidateLoginWithPhoneNumber.class
-com\rebirthQuickteller\TestCases\ValidateLoginWithEmail.class
+pages\LoginPageObjects.class
+com\rebirthQuickteller\TestCases\SignUp.class
+com\rebirthQuickteller\TestCases\ValidateLoginIn.class
+com\rebirthQuickteller\TestCases\Recharge.class
+pages\RechargePageObjects.class
