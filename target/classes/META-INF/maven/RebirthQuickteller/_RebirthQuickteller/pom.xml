@@ -24,12 +24,14 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>runner\TestNg.xml</suiteXmlFile>
+						<suiteXmlFile>runner\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -41,11 +43,19 @@
 
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
-		</dependency>
+		</dependency>-->
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
 
 
 		<dependency>
@@ -64,20 +74,27 @@
 			<version>2.41.0</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>3.7.1</version>
-		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.8.1</version>
+</dependency>
+
+
+		
+		
+		
+	
+		 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>3.141.59</version>
 		</dependency>
+		
+ 
+
 
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->

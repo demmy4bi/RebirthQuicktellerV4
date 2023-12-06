@@ -2,19 +2,28 @@ package com.rebirthQuickteller.base;
 
 import static com.rebirthQuickteller.base.TestBase.faker;
 
+import java.util.Random;
+import java.util.List;
+import java.util.ArrayList;
+import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,6 +31,7 @@ import org.testng.annotations.BeforeClass;
 import com.rebirthQuickteller.utility.Utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class TestBase {
 	public static WebDriver driver;
@@ -32,27 +42,49 @@ public class TestBase {
 	public void setUp() throws IOException {
 
 		if (Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome")) {
-			   //set property and create instance of chrome browser
-	          // System.setProperty("webdriver.chrome.driver", projectPath + "Drivers/chromedriver.exe");
-	          // driver = new ChromeDriver();
-				
-				  WebDriverManager.chromedriver().setup();
-				  
-				  driver = new ChromeDriver();
-				  
-				  //Run in headless mode
-					/*
-					 * ChromeOptions options = new ChromeOptions();
-					 * options.addArguments("--headless"); driver = new ChromeDriver(options);
-					 */
-					 
-				 
+			// set property and create instance of chrome browser
+
+			System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\chromedriver.exe");
+
+			// driver = new ChromeDriver();
+
+			// webdrivermanager setup // driver = new ChromeDriver();
+
+			// WebDriverManager.chromedriver().setup();
+
+			// Run in UI Mode
+
+			
+			
+			  ChromeOptions options = new ChromeOptions();
+			  options.addArguments("--disable-gpu");
+			 
+			 
+
+			// Run in headless mode//
+
+			
+			/*
+			 * ChromeOptions options = new ChromeOptions();
+			 * options.addArguments("--headless"); options.addArguments("disable-gpu");
+			 * options.addArguments("window-size=1200,1100");
+			 */
+			 
+
+			driver = new ChromeDriver(options);
+
 			Reporter.log("=====Chrome Browser Session Started=====", true);
 
 		} else if (Utility.fetchProperty("browserName").toString().equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+
+			// headless
+			/*
+			 * FirefoxOptions options = new FirefoxOptions();
+			 * options.addArguments("--headless"); driver = new FirefoxDriver(options);
+			 */
 
 			Reporter.log("=====Firefox  Browser Session Started=====", true);
 		} else if (Utility.fetchProperty("browserName").toString().equalsIgnoreCase("edge")) {
@@ -69,12 +101,23 @@ public class TestBase {
 
 			driver = new ChromeDriver();
 		}
-		driver.get(Utility.fetchProperty("applicationUrl").toString());
+		/*
+		 * driver.get(Utility.fetchProperty("applicationUrl").toString());
+		 * driver.manage().window().maximize(); driver.manage().deleteAllCookies();
+		 * driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		 * driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		 * Reporter.log("=====Application Started=====", true);
+		 */
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		Reporter.log("=====Application Started=====", true);
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+
+		// driver.get(Utility.fetchProperty("applicationUrl").toString());
+		String applicationUrl = Utility.fetchProperty("applicationUrl").toString();
+		driver.get(applicationUrl);
+
 	}
 
 	// To choose Webelement
@@ -131,43 +174,125 @@ public class TestBase {
 		chooseElement(Locator).sendKeys(Utility.fetchLocator(Value));
 	}
 
-	
-	  public static String RandomNigeriaPhoneGenerator() {
-		  
-		 // return faker.phoneNumber().cellPhone();
-		  Faker faker = new Faker();
-	        String phoneNumber = "0805" + faker.number().digits(7);
-	        return phoneNumber;
-		  
-	  }
-	  
-	  
-	  public static String randomEmail() {
+	public static String RandomNigeriaPhoneGenerator() {
 
-	        return faker.internet().emailAddress();
-	    }
+		// return faker.phoneNumber().cellPhone();
+		Faker faker = new Faker();
+		String phoneNumber = faker.number().digits(7);
+		return phoneNumber;
 
-	  public static String randomFirstName() {
+	}
 
-	        return faker.name().firstName();
-	    }
+	public static String RandomMtnNumber() {
 
-	    public static String randomLastName() {
+		// return faker.phoneNumber().cellPhone();
+		Faker faker = new Faker();
+		String phoneNumber = "0806" + faker.number().digits(7);
+		return phoneNumber;
 
-	        return faker.name().lastName();
-	    }
+	}
 
-	    public static String randomName() {
+	public static String RandomAirtelNumber() {
 
-	        return faker.name().name();
-	    }
-	  
-	 
-	
- 
-	
-	
-	
+		// return faker.phoneNumber().cellPhone();
+		Faker faker = new Faker();
+		String phoneNumber = "0802" + faker.number().digits(7);
+		return phoneNumber;
+
+	}
+
+	public static String Random9mobileNumber() {
+
+		// return faker.phoneNumber().cellPhone();
+		Faker faker = new Faker();
+		String phoneNumber = "0809" + faker.number().digits(7);
+		return phoneNumber;
+
+	}
+
+	public static String randomEmail() {
+
+		return faker.internet().emailAddress();
+	}
+
+	public static String randomFirstName() {
+
+		return faker.name().firstName();
+	}
+
+	public static String randomLastName() {
+
+		return faker.name().lastName();
+	}
+
+	public static String randomName() {
+
+		return faker.name().name();
+	}
+
+	public void NavigateHomePage() throws IOException {
+		// setUp();
+
+		// driver.manage().window().maximize();
+
+		/*
+		 * driver.manage().deleteAllCookies();
+		 * driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		 * driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		 * 
+		 * ChromeOptions options = new ChromeOptions();
+		 * options.addArguments("--disable-gpu"); driver = new ChromeDriver(options);
+		 */
+
+		driver.get(Utility.fetchProperty("applicationUrl").toString());
+
+		String actualmessage = new WebDriverWait(driver, 60)
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@alt='qickteller']"))).getText();
+		System.out.println(actualmessage);
+		System.out.println("Navigated to HomePage!!!  ");
+	}
+
+	private static final String BASE_NAME = "QA engineer";
+	private static final String ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+	public static String generateRandomName() {
+		Random random = new Random();
+		StringBuilder randomAlphabets = new StringBuilder();
+		for (int i = 0; i < 3; i++) { // Appending 3 random alphabets
+			char randomChar = ALPHABETS.charAt(random.nextInt(ALPHABETS.length()));
+			randomAlphabets.append(randomChar);
+		}
+		return BASE_NAME + " " + randomAlphabets.toString(); // Append random alphabets to the base name
+	}
+
+	public static String RandomStreetGenerator() {
+
+		// Constant alphabet characters
+		String alphabet = "Akinyemi Street";
+
+		// Generate a random number (between 1000 and 9999)
+		int randomNumber = new Random().nextInt(9000) + 1000;
+
+		// Concatenate the alphabet characters with the random number
+		String randomStreet = alphabet + randomNumber;
+
+		return randomStreet;
+	}
+
+	public static String RandomCityGenerator() {
+
+		// Constant alphabet characters
+		String alphabet = "Ogudu";
+
+		// Generate a random number (between 1000 and 9999)
+		int randomNumber = new Random().nextInt(9000) + 1000;
+
+		// Concatenate the alphabet characters with the random number
+		String randomCity = alphabet + randomNumber;
+
+		return randomCity;
+	}
+
 	@AfterClass
 	public void terminateSession() {
 

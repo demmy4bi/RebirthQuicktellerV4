@@ -1,0 +1,457 @@
+<html>
+<head>
+<title>TestNG:  Recharge</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Recharge</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 25 14:52:05 WAT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>858 seconds (858784 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.QTAccountAirtelAirtimeRecharge()'><b>QTAccountAirtelAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform Airtel recharge with QTAccount <br/>
+<a href="#Output-1600512192" onClick='toggleBox("Output-1600512192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1600512192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600512192">
+Test to perform Airtel recharge with QTAccount started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+QuicktellerAccount Selected for Airtime Recharge<br/>
+Transfer Button Clicked Successfully<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Airtime Purchase Successful!&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.RechargePageObjects.SuccessfulRechargeAssertion(RechargePageObjects.java:157)
+	at com.rebirthQuickteller.TestCases.Recharge.QTAccountAirtelAirtimeRecharge(Recharge.java:161)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(.,&apos;Airtime Purchase Successful!&apos;)]&quot;}
+  (Session info: headless chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ed6a012eeaa88d0877e3850f7c5bbbd
+*** Element info: {Using=xpath, value=//p[contains(.,&apos;Airtime Purchase Successful!&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600512192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600512192'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Airtime Purchase Successful!&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.RechargePageObjects.SuccessfulRechargeAssertion(RechargePageObjects.java:157)
+	at com.rebirthQuickteller.TestCases.Recharge.QTAccountAirtelAirtimeRecharge(Recharge.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(.,&apos;Airtime Purchase Successful!&apos;)]&quot;}
+  (Session info: headless chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.88 (1d05652f52a5..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ed6a012eeaa88d0877e3850f7c5bbbd
+*** Element info: {Using=xpath, value=//p[contains(.,&apos;Airtime Purchase Successful!&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+</pre></div></td>
+<td>526</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.CardAirtimeRecharge()'><b>CardAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform recharge with Card <br/>
+<a href="#Output-1455386398" onClick='toggleBox("Output-1455386398", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1455386398" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1455386398">
+Test to perform recharge with card started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Glo Clicked Successfully<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+New card selected<br/>
+Card number input<br/>
+CardExpiryDate input<br/>
+CardCVV input<br/>
+CardPin input<br/>
+Next button clicked successfully<br/>
+Recharge Successful<br/>
+Receipt clicked<br/>
+Receipt closed successfully<br/>
+Done Clicked successfully<br/>
+Test to perform recharge with card completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.InsufficentFundQTAccountAirtimeRecharge()'><b>InsufficentFundQTAccountAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will validate user can not recharge airtime with Insufficent QTAccount balance<br/>
+<a href="#Output-1249669807" onClick='toggleBox("Output-1249669807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1249669807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1249669807">
+Test to validate user can not recharge airtime with Insufficent QTAccount balance started !!!<br/>
+Sign In with PhoneNumber button clicked successfully	<br/>
+phoneNumber entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+Insufficent Balance Airtime recharge Validated<br/>
+Test to validate user can not recharge airtime with Insufficent QTAccount balance completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.InsufficientFundOneTouchSelfRecharge()'><b>InsufficientFundOneTouchSelfRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will validate user cannot perform self recharge using OneTouch with InsufficientFund <br/>
+<a href="#Output-657412979" onClick='toggleBox("Output-657412979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657412979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657412979">
+Test to validate user cannot perform self recharge using OneTouch with InsufficientFund Started !!!<br/>
+Sign In with PhoneNumber button clicked successfully	<br/>
+phoneNumber entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+Self Saved Beneficiary Clicked<br/>
+Amount Entered<br/>
+PaywithOneTouch Clicked<br/>
+InsufficientFund OneTouch Self Rechrage errormessage Validated<br/>
+Test to validate user cannot perform self recharge using OneTouch with InsufficientFund Completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.InvalidphoneNumberAirtimeRecharge()'><b>InvalidphoneNumberAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will check user should not be able to recharge with invalid phoneNumber<br/>
+<a href="#Output-948963537" onClick='toggleBox("Output-948963537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-948963537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-948963537">
+Test to check user should not be able to recharge with invalid phoneNumber started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Assertion of InvalidphoneNumberInput successful<br/>
+Test to check user should not be able to recharge with invalid phoneNumber completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.OneTouchAirtimeRecharge()'><b>OneTouchAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform self recharge with OneTouch <br/>
+<a href="#Output-247576438" onClick='toggleBox("Output-247576438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-247576438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247576438">
+Test to perform self recharge with OneTouch started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+Self Saved Beneficiary Clicked<br/>
+Amount Entered<br/>
+PaywithOneTouch Clicked<br/>
+Receipt clicked<br/>
+OneTourch self recharge successfull<br/>
+Receipt closed successfully<br/>
+Done Clicked successfully<br/>
+Test to perform self recharge with OneTouch completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.QTAccount9mobileAirtimeRecharge()'><b>QTAccount9mobileAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform 9moblie recharge with QTAccount <br/>
+<a href="#Output-1466006133" onClick='toggleBox("Output-1466006133", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1466006133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1466006133">
+Test to perform 9mobile recharge with QTAccount started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+QuicktellerAccount Selected for Airtime Recharge<br/>
+Transfer Button Clicked Successfully<br/>
+Recharge Successful<br/>
+Receipt clicked<br/>
+Receipt closed successfully<br/>
+Done Clicked successfully<br/>
+Test to perform 9mobile recharge with QTAccount completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.QTAccountAirtimeRechargeWithInvalidTransactionPin()'><b>QTAccountAirtimeRechargeWithInvalidTransactionPin</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform recharge with QTAccount using Invalid Transacton Pin <br/>
+<a href="#Output-45681857" onClick='toggleBox("Output-45681857", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45681857" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45681857">
+Test to perform recharge with QTAccount using Invalid Transacton Pin started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Glo Clicked Successfully<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+QuicktellerAccount Selected for Airtime Recharge<br/>
+Transfer Button Clicked Successfully<br/>
+Invalid Transaction Pin Asserted successfully<br/>
+Test to perform recharge with QTAccount using Invalid Transacton Pin completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.QTAccountGloAirtimeRecharge()'><b>QTAccountGloAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform Glo recharge with QTAccount <br/>
+<a href="#Output-1568666385" onClick='toggleBox("Output-1568666385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1568666385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1568666385">
+Test to perform Glo recharge with QTAccount started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+QuicktellerAccount Selected for Airtime Recharge<br/>
+Transfer Button Clicked Successfully<br/>
+Recharge Successful<br/>
+Receipt clicked<br/>
+Receipt closed successfully<br/>
+Done Clicked successfully<br/>
+Test to perform Glo recharge with QTAccount completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.QTAccountMtnAirtimeRecharge()'><b>QTAccountMtnAirtimeRecharge</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will perform Mtn recharge with QTAccount <br/>
+<a href="#Output-1741783268" onClick='toggleBox("Output-1741783268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1741783268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1741783268">
+Test to perform Mtn recharge with QTAccount started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+QuicktellerAccount Selected for Airtime Recharge<br/>
+Transfer Button Clicked Successfully<br/>
+Recharge Successful<br/>
+Receipt clicked<br/>
+Receipt closed successfully<br/>
+Done Clicked successfully<br/>
+Test to perform Mtn recharge with QTAccount completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+<tr>
+<td title='com.rebirthQuickteller.TestCases.Recharge.ValidateAirtimeRechargeBelow50naira()'><b>ValidateAirtimeRechargeBelow50naira</b><br>Test class: com.rebirthQuickteller.TestCases.Recharge<br>Test method: This test case will validate user can not recharge with amount below #50<br/>
+<a href="#Output-920869086" onClick='toggleBox("Output-920869086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-920869086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-920869086">
+Test to validate user can not recharge with amount below #50 started !!!<br/>
+emailAddress entered successfully<br/>
+Password entered successfully<br/>
+SignIn button clicked successfully<br/>
+Airtime button clicked successfully<br/>
+New Airtime button clicked successfully<br/>
+PhoneNumber Entered<br/>
+Glo Clicked Successfully<br/>
+Next button clicked successfully<br/>
+Amount Entered<br/>
+Pay button clicked<br/>
+Airtime Recharge Below 50naira Validated<br/>
+Test to validate user can not recharge with amount below #50 completed !!!<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.rebirthQuickteller.TestCases.Recharge@33b1c5c5</td></tr>
+</table><p>
+</body>
+</html>

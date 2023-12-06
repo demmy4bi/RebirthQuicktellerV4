@@ -9,10 +9,654 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">rebirthQuicktellerSuite</th></tr>
-<tr><td><a href="#t0">Validate Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">25,157</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SignUp</a></td><td class="num">13</td><td class="num">0</td><td class="num attn">2</td><td class="num">430,069</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Validate Login</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">90,558</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ProfileUpdate</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">121,483</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">SendMoney</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">14</td><td class="num">210,396</td><td></td><td></td></tr>
+<tr><td><a href="#t4">AirtimeRecharge</a></td><td class="num">0</td><td class="num attn">11</td><td class="num">0</td><td class="num">2,783</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">DataRecharge</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">3,342</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">29</th><th class="num attn">15</th><th class="num attn">17</th><th class="num">858,631</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">rebirthQuicktellerSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validate Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.SignUp</td><td><a href="#m0">InvalidPhonenumberSignUp</a></td><td rowspan="1">1683019588637</td><td rowspan="1">15993</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">rebirthQuicktellerSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SignUp &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.rebirthQuickteller.TestCases.SignUp</td><td><a href="#m0">AlreadyExistPhonenumberSignUp</a></td><td rowspan="1">1701859433264</td><td rowspan="1">44512</td></tr><tr class="failedeven"><td><a href="#m1">InvalidPhonenumberSignUp</a></td><td rowspan="1">1701859477802</td><td rowspan="1">69938</td></tr><tr><th colspan="4">SignUp &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.rebirthQuickteller.TestCases.SignUp</td><td><a href="#m2">CheckDateOfBirthIsRequiredToCompleteOnboarding</a></td><td rowspan="1">1701859675504</td><td rowspan="1">30407</td></tr><tr class="passedeven"><td><a href="#m3">CheckFirstNameIsRequiredToCompleteOnboarding</a></td><td rowspan="1">1701859566254</td><td rowspan="1">25789</td></tr><tr class="passedeven"><td><a href="#m4">CheckGenderIsRequiredToCompleteOnboarding</a></td><td rowspan="1">1701859633126</td><td rowspan="1">42377</td></tr><tr class="passedeven"><td><a href="#m5">CheckLastNameIsRequiredToCompleteOnboarding</a></td><td rowspan="1">1701859592044</td><td rowspan="1">41082</td></tr><tr class="passedeven"><td><a href="#m6">CheckPinMisMatchisNotPermmittedToCompleteOnboarding</a></td><td rowspan="1">1701859705912</td><td rowspan="1">40495</td></tr><tr class="passedeven"><td><a href="#m7">CheckPinRepetitiveisNotPermmittedToCompleteOnboarding</a></td><td rowspan="1">1701859746407</td><td rowspan="1">50324</td></tr><tr class="passedeven"><td><a href="#m8">InvalidPasswordCheck1</a></td><td rowspan="1">1701859547746</td><td rowspan="1">14064</td></tr><tr class="passedeven"><td><a href="#m9">InvalidPasswordCheck2</a></td><td rowspan="1">1701859561811</td><td rowspan="1">811</td></tr><tr class="passedeven"><td><a href="#m10">InvalidPasswordCheck3</a></td><td rowspan="1">1701859562623</td><td rowspan="1">887</td></tr><tr class="passedeven"><td><a href="#m11">InvalidPasswordCheck4</a></td><td rowspan="1">1701859563511</td><td rowspan="1">1024</td></tr><tr class="passedeven"><td><a href="#m12">InvalidPasswordCheck5</a></td><td rowspan="1">1701859564537</td><td rowspan="1">859</td></tr><tr class="passedeven"><td><a href="#m13">InvalidPasswordCheck6</a></td><td rowspan="1">1701859565397</td><td rowspan="1">857</td></tr><tr class="passedeven"><td><a href="#m14">SignUpwithPhoneNumber</a></td><td rowspan="1">1701859796733</td><td rowspan="1">33573</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Validate Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">com.rebirthQuickteller.TestCases.ValidateLogin</td><td><a href="#m15">EmailLoginWithEmptyEmailAddressField</a></td><td rowspan="1">1701859849890</td><td rowspan="1">997</td></tr><tr class="passedeven"><td><a href="#m16">EmailLoginWithEmptyPasswordField</a></td><td rowspan="1">1701859850888</td><td rowspan="1">1066</td></tr><tr class="passedeven"><td><a href="#m17">EmailLoginwithInvalidPassword</a></td><td rowspan="1">1701859851955</td><td rowspan="1">6921</td></tr><tr class="passedeven"><td><a href="#m18">EmailLoginwithValidcredentials</a></td><td rowspan="1">1701859858877</td><td rowspan="1">6826</td></tr><tr class="passedeven"><td><a href="#m19">LoginWithEmptyPhonenumberField</a></td><td rowspan="1">1701859886508</td><td rowspan="1">1120</td></tr><tr class="passedeven"><td><a href="#m20">LoginWithInvalidEmailInput</a></td><td rowspan="1">1701859845912</td><td rowspan="1">1243</td></tr><tr class="passedeven"><td><a href="#m21">LoginWithInvalidPhoneNumberInput</a></td><td rowspan="1">1701859880896</td><td rowspan="1">904</td></tr><tr class="passedeven"><td><a href="#m22">LoginWithUnRegisteredPhonenumber</a></td><td rowspan="1">1701859881801</td><td rowspan="1">4706</td></tr><tr class="passedeven"><td><a href="#m23">LoginWithUnregisteredEmail</a></td><td rowspan="1">1701859847156</td><td rowspan="1">2733</td></tr><tr class="passedeven"><td><a href="#m24">PhoneNumberLoginWithInvalidPassword</a></td><td rowspan="1">1701859888608</td><td rowspan="1">6449</td></tr><tr class="passedeven"><td><a href="#m25">PhoneNumberLoginWithValidCredentials</a></td><td rowspan="1">1701859895057</td><td rowspan="1">8842</td></tr><tr class="passedeven"><td><a href="#m26">ValidateEmailLoginWithRememberMe</a></td><td rowspan="1">1701859865705</td><td rowspan="1">15190</td></tr><tr class="passedeven"><td><a href="#m27">ValidatePhonenumberLoginWithRememberMe</a></td><td rowspan="1">1701859903900</td><td rowspan="1">17062</td></tr><tr class="passedeven"><td><a href="#m28">phoneNumberLoginWithEmptyPasswordField</a></td><td rowspan="1">1701859887628</td><td rowspan="1">980</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ProfileUpdate &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.UpdatePersonalDetails</td><td><a href="#m29">UpdateOccupation</a></td><td rowspan="1">1701859960583</td><td rowspan="1">50365</td></tr><tr><th colspan="4">ProfileUpdate &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.UpdatePersonalDetails</td><td><a href="#m30">UpdateAddress</a></td><td rowspan="1">1701860010950</td><td rowspan="1">31700</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">SendMoney &#8212; failed</th></tr><tr class="failedeven"><td rowspan="14">com.rebirthQuickteller.TestCases.SendMoney</td><td><a href="#m31">CardTransferWithValidDetails</a></td><td rowspan="1">1701860250744</td><td rowspan="1">291</td></tr><tr class="failedeven"><td><a href="#m32">FundAccountWithAmountbelow50naira</a></td><td rowspan="1">1701860229503</td><td rowspan="1">20511</td></tr><tr class="failedeven"><td><a href="#m33">FundAccountWithValidCardDetails</a></td><td rowspan="1">1701860250570</td><td rowspan="1">171</td></tr><tr class="failedeven"><td><a href="#m34">InsufficientFundTransferwithQTAccount</a></td><td rowspan="1">1701860250017</td><td rowspan="1">284</td></tr><tr class="failedeven"><td><a href="#m35">InvalidGTBAccountNumberValidBankName_Transfer</a></td><td rowspan="1">1701860252216</td><td rowspan="1">241</td></tr><tr class="failedeven"><td><a href="#m36">InvalidQTAccountNumberValidBankName_Transfer</a></td><td rowspan="1">1701860251423</td><td rowspan="1">309</td></tr><tr class="failedeven"><td><a href="#m37">QTPhonenumberTransfer</a></td><td rowspan="1">1701860252815</td><td rowspan="1">270</td></tr><tr class="failedeven"><td><a href="#m38">QTQuicktagTransfer</a></td><td rowspan="1">1701860252459</td><td rowspan="1">354</td></tr><tr class="failedeven"><td><a href="#m39">QtAccountTransferToGTBAccount</a></td><td rowspan="1">1701860251733</td><td rowspan="1">239</td></tr><tr class="failedeven"><td><a href="#m40">QtAccountTransferWithInValidPIN</a></td><td rowspan="1">1701860114102</td><td rowspan="1">63786</td></tr><tr class="failedeven"><td><a href="#m41">QtAccountTransferWithValidDetails</a></td><td rowspan="1">1701860063790</td><td rowspan="1">50310</td></tr><tr class="failedeven"><td><a href="#m42">TransferwithAmountbelow50naira</a></td><td rowspan="1">1701860250302</td><td rowspan="1">265</td></tr><tr class="failedeven"><td><a href="#m43">ValidGTBAccountNumberInvalidBankName_Transfer</a></td><td rowspan="1">1701860251974</td><td rowspan="1">241</td></tr><tr class="failedeven"><td><a href="#m44">ValidQTAccountNumberInvalidBankName_Transfer</a></td><td rowspan="1">1701860251037</td><td rowspan="1">380</td></tr><tr><th colspan="4">SendMoney &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.SendMoney</td><td><a href="#m45">FundAccountWithEcash</a></td><td rowspan="1">1701860177894</td><td rowspan="1">51608</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">AirtimeRecharge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.AirtimeRecharge</td><td><a href="#m46">setUp</a></td><td rowspan="1">1701860253559</td><td rowspan="1">2730</td></tr><tr><th colspan="4">AirtimeRecharge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.AirtimeRecharge</td><td><a href="#m47">terminateSession</a></td><td rowspan="1">1701860256337</td><td rowspan="1">0</td></tr><tr><th colspan="4">AirtimeRecharge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="11">com.rebirthQuickteller.TestCases.AirtimeRecharge</td><td><a href="#m48">CardAirtimeRecharge</a></td><td rowspan="1">1701860256336</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m49">InsufficentQTAccountAirtimeRecharge</a></td><td rowspan="1">1701860256334</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m50">InsufficientOneTouchSelfRecharge</a></td><td rowspan="1">1701860256336</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m51">InvalidphoneNumberAirtimeRecharge</a></td><td rowspan="1">1701860256328</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m52">OneTouchAirtimeRecharge</a></td><td rowspan="1">1701860256335</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m53">QTAccount9mobileAirtimeRecharge</a></td><td rowspan="1">1701860256333</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m54">QTAccountAirtelAirtimeRecharge</a></td><td rowspan="1">1701860256332</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m55">QTAccountAirtimeRechargeWithInvalidTransactionPin</a></td><td rowspan="1">1701860256330</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m56">QTAccountGloAirtimeRecharge</a></td><td rowspan="1">1701860256330</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m57">QTAccountMtnAirtimeRecharge</a></td><td rowspan="1">1701860256331</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m58">ValidateAirtimeRechargeBelow50naira</a></td><td rowspan="1">1701860256335</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">DataRecharge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.DataRecharge</td><td><a href="#m59">setUp</a></td><td rowspan="1">1701860256412</td><td rowspan="1">3336</td></tr><tr><th colspan="4">DataRecharge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.rebirthQuickteller.TestCases.DataRecharge</td><td><a href="#m60">terminateSession</a></td><td rowspan="1">1701860259754</td><td rowspan="1">0</td></tr><tr><th colspan="4">DataRecharge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.rebirthQuickteller.TestCases.DataRecharge</td><td><a href="#m61">InsufficentQTAccountDataRecharge</a></td><td rowspan="1">1701860259753</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m62">InsufficientOneTouchSelfRecharge</a></td><td rowspan="1">1701860259754</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m63">InvalidphoneNumberAirtimeRecharge</a></td><td rowspan="1">1701860259751</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m64">QTAccountAirtimeRechargeWithInvalidTransactionPin</a></td><td rowspan="1">1701860259752</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Validate Login</h2><h3 id="m0">com.rebirthQuickteller.TestCases.SignUp#InvalidPhonenumberSignUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">SignUp button clicked successfully<br/>SignIn button clicked successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SignUp</h2><h3 id="m0">com.rebirthQuickteller.TestCases.SignUp#AlreadyExistPhonenumberSignUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't sign up with already exist phoneNumber started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Account already exists&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.SignUpPageObjects.AlreadyExistphonenumberAssertion(SignUpPageObjects.java:251)
+	at com.rebirthQuickteller.TestCases.SignUp.AlreadyExistPhonenumberSignUp(SignUp.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(.,&apos;Account already exists&apos;)]&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22b641c00547450cf801ecd520d64042
+*** Element info: {Using=xpath, value=//p[contains(.,&apos;Account already exists&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.rebirthQuickteller.TestCases.SignUp#InvalidPhonenumberSignUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't signup using invalid phonenumber started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item &gt; div&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22b641c00547450cf801ecd520d64042
+*** Element info: {Using=css selector, value=.item &gt; div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.rebirthQuickteller.base.TestBase.chooseElement(TestBase.java:131)
+	at pages.SignUpPageObjects.SelectSearchedCountryCode(SignUpPageObjects.java:432)
+	at com.rebirthQuickteller.TestCases.SignUp.InvalidPhonenumberSignUp(SignUp.java:46)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.rebirthQuickteller.TestCases.SignUp#CheckDateOfBirthIsRequiredToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide dateofbirth to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>LastName NAME entered successfully<br/>Gender selected successfully<br/>quickTag NAME entered successfully<br/>RefferalName entered successfully<br/>Test to confirm user must provide dateofbirth to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.rebirthQuickteller.TestCases.SignUp#CheckFirstNameIsRequiredToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide firstName to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>LastName NAME entered successfully<br/>Gender selected successfully<br/>DateofBirth entered successfully<br/>quickTag NAME entered successfully<br/>RefferalName entered successfully<br/>Test to confirm user must provide firstName to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.rebirthQuickteller.TestCases.SignUp#CheckGenderIsRequiredToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide gender to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>LastName NAME entered successfully<br/>DateofBirth entered successfully<br/>quickTag NAME entered successfully<br/>RefferalName entered successfully<br/>Test to confirm user must provide gender to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.rebirthQuickteller.TestCases.SignUp#CheckLastNameIsRequiredToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide lastName to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>Gender selected successfully<br/>DateofBirth entered successfully<br/>quickTag NAME entered successfully<br/>RefferalName entered successfully<br/>Test to confirm user must provide lastName to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.rebirthQuickteller.TestCases.SignUp#CheckPinMisMatchisNotPermmittedToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide match pin and confirm pin to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>LastName NAME entered successfully<br/>Gender selected successfully<br/>DateofBirth entered successfully<br/>quickTag NAME entered successfully<br/>RefferalName entered successfully<br/>Next button clicked successfully<br/>Pin entered successfully<br/>ConfirmPin entered successfully<br/>SavePin button clicked successfully<br/>Pin MisMatch error message Asserted<br/>Test to confirm user must provide match pin and confirm pin to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.rebirthQuickteller.TestCases.SignUp#CheckPinRepetitiveisNotPermmittedToCompleteOnboarding</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide pin and confirm pin that is not repetitive or sequential to complete Onboarding Process started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>LastName NAME entered successfully<br/>Gender selected successfully<br/>DateofBirth entered successfully<br/>RefferalName entered successfully<br/>Next button clicked successfully<br/>Pin entered successfully<br/>ConfirmPin entered successfully<br/>SavePin button clicked successfully<br/>Pin Repetitive/Sequential error message Asserted<br/>Test to confirm user must provide pin and confirm pin that is not repetitive or sequential to complete Onboarding Process completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck1</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide password that Contain 1 Number started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>Passwordpage checked<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password Must Contain 1 Number Assertion successful<br/>Test to confirm user must provide password that Contain 1 Number completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide password that Contain LowerCaseLetter started !!!<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password Must Contain LowerCase Letter Assertion successful<br/>Test to confirm user must provide password that Contain LowerCaseLetter completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck3</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide password that Contain UpperCaseLetter started !!!<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password Must Contain UpperCase Letter Assertion successful<br/>Test to confirm user must provide password that Contain UpperCaseLetter completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide the same password and confirmPassword started !!!<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password must match Assertion successful<br/>Test to confirm user must provide the same password and confirmPassword completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck5</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide password that contains 1 Special Character started !!!<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password must match Assertion successful<br/>Test to confirm user must provide password that contains 1 Special Character completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.rebirthQuickteller.TestCases.SignUp#InvalidPasswordCheck6</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to confirm user must provide password that contains 8 Character started !!!<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Password Must Contain 8 Character Assertion successful<br/>Test to confirm user must provide password that contains 8 Character completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.rebirthQuickteller.TestCases.SignUp#SignUpwithPhoneNumber</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can signup with phonenumber using valid credentials started !!!<br/>SignUp button clicked successfully<br/>Sign up with phonenumber button clicked successfully<br/>Search entered successfully<br/>Country code selected successfully<br/>phoneNumber entered successfully<br/>ClickTermConditionButton clicked successfully<br/>SignUp button clicked successfully<br/>OTP entered successfully<br/>password entered successfully<br/>confirmPassword entered successfully<br/>Next button clicked successfully<br/>WelcometoQuickteller message asserted<br/>Get Started button clicked successfully<br/>FirstName_NAME entered successfully<br/>LastName NAME entered successfully<br/>Gender selected successfully<br/>DateofBirth entered successfully<br/>RefferalName entered successfully<br/>Next button clicked successfully<br/>Profile Update success message Asserted<br/>Pin entered successfully<br/>ConfirmPin entered successfully<br/>SavePin button clicked successfully<br/>Pin set success message Asserted<br/>Test to verify user can signup with phonenumber using valid credentials completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Validate Login</h2><h3 id="m15">com.rebirthQuickteller.TestCases.ValidateLogin#EmailLoginWithEmptyEmailAddressField</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with empty email fields and valid password started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>Test to verify user can't login with empty email fields and valid password completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.rebirthQuickteller.TestCases.ValidateLogin#EmailLoginWithEmptyPasswordField</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with empty pasword fields and valid email address started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>Test to verify user can't login with empty pasword fields and valid email address completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.rebirthQuickteller.TestCases.ValidateLogin#EmailLoginwithInvalidPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with  valid email and a wrong password fields started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Assertion of Invalid Password successful<br/>Test to verify user can't login with  valid email and a wrong password fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.rebirthQuickteller.TestCases.ValidateLogin#EmailLoginwithValidcredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform login with valid email and password started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Test to perform login with valid email and password completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.rebirthQuickteller.TestCases.ValidateLogin#LoginWithEmptyPhonenumberField</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with empty phoneNumber fields and valid password started !!!<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>Test to verify user can't login with empty phoneNumber fields and valid password completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.rebirthQuickteller.TestCases.ValidateLogin#LoginWithInvalidEmailInput</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with invalid email and a valid password fields started !!!<br/>emailAddress entered successfully<br/>Assertion of InvalidEmailInput successful<br/>Password entered successfully<br/>Test to verify user can't login with invalid email and a valid password fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.rebirthQuickteller.TestCases.ValidateLogin#LoginWithInvalidPhoneNumberInput</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with invalid phoneNumber fields started !!!<br/>Sign In with PhoneNumber button clicked successfully	<br/>phoneNumber entered successfully<br/>Assertion of InvalidphoneNumberInput successful<br/>Test to verify user can't login with invalid phoneNumber fields fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.rebirthQuickteller.TestCases.ValidateLogin#LoginWithUnRegisteredPhonenumber</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with  UnregisteredPhoneNumber and a valid password fields started !!!<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Assertion of UnregisteredPhoneNumber successful<br/>Test to verify user can't login with  UnregisteredPhoneNumber and a valid password fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.rebirthQuickteller.TestCases.ValidateLogin#LoginWithUnregisteredEmail</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with  UnregisteredEmail and a valid password fields started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Assertion of UnregisteredEmail successful<br/>Test to verify user can't login with  UnregisteredEmail and a valid password fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.rebirthQuickteller.TestCases.ValidateLogin#PhoneNumberLoginWithInvalidPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with valid phoneNumber and a wrong password fields started !!!<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Assertion of Invalid Password successful<br/>Test to verify user can't login with valid phoneNumber and a wrong password fields completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.rebirthQuickteller.TestCases.ValidateLogin#PhoneNumberLoginWithValidCredentials</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform phoneNumber login with valid credentials started !!!<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Test to perform phoneNumber login with valid credentials completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.rebirthQuickteller.TestCases.ValidateLogin#ValidateEmailLoginWithRememberMe</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform valid login with rememberMe started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Test to perform valid email login with rememberMe completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.rebirthQuickteller.TestCases.ValidateLogin#ValidatePhonenumberLoginWithRememberMe</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform valid phoneNumber login with rememberMe started !!!<br/>Sign In with PhoneNumber button clicked successfully	<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Sign In with PhoneNumber button clicked successfully	<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Logout successfully<br/>Test to perform valid PhoneNumberlogin with rememberMe completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.rebirthQuickteller.TestCases.ValidateLogin#phoneNumberLoginWithEmptyPasswordField</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can't login with empty pasword fields and valid phoneNumber started !!!<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>Test to verify user can't login with empty pasword fields and valid phoneNumber completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ProfileUpdate</h2><h3 id="m29">com.rebirthQuickteller.TestCases.UpdatePersonalDetails#UpdateOccupation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can update occupation started !!!<br/>Sign In with PhoneNumber button clicked successfully	<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Account & Settings button clicked<br/>ProfiledetailsDropdown button clicked<br/>Edit button clicked<br/>occupation entered successfully<br/>Save button clicked</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Profile updated!&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.UpdatePersonalDetailsPageObjects.SuccessfulProfileUpdateAssertion(UpdatePersonalDetailsPageObjects.java:171)
+	at com.rebirthQuickteller.TestCases.UpdatePersonalDetails.UpdateOccupation(UpdatePersonalDetails.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(.,&apos;Profile updated!&apos;)]&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca75ce45a29aa5db1917be1888d1b98c
+*** Element info: {Using=xpath, value=//p[contains(.,&apos;Profile updated!&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.rebirthQuickteller.TestCases.UpdatePersonalDetails#UpdateAddress</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to verify user can update address started !!!<br/>Sign In with PhoneNumber button clicked successfully	<br/>phoneNumber entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Account & Settings button clicked<br/>AddressDropdown button clicked<br/>Edit button clicked<br/>state dropdown clicked<br/>random state selected<br/>LGA dropdown clicked<br/>random LGA selected<br/>address entered successfully<br/>city entered successfully<br/>Save button clicked<br/>Address updated successfully<br/>Test to verify user can update address completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SendMoney</h2><h3 id="m31">com.rebirthQuickteller.TestCases.SendMoney#CardTransferWithValidDetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer with card started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.CardTransferWithValidDetails(SendMoney.java:201)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.rebirthQuickteller.TestCases.SendMoney#FundAccountWithAmountbelow50naira</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user cannot perform Fund QtAccount with amount below #50 started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.FundAccountWithAmountbelow50naira(SendMoney.java:110)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.rebirthQuickteller.TestCases.SendMoney#FundAccountWithValidCardDetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform Fund QTAccount with Card started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.FundAccountWithValidCardDetails(SendMoney.java:174)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.rebirthQuickteller.TestCases.SendMoney#InsufficientFundTransferwithQTAccount</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not perform transfer with insuffient QT account balance started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.InsufficientFundTransferwithQTAccount(SendMoney.java:127)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.rebirthQuickteller.TestCases.SendMoney#InvalidGTBAccountNumberValidBankName_Transfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not transfer using Invalid GTBAccountNumber started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.InvalidGTBAccountNumberValidBankName_Transfer(SendMoney.java:318)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.rebirthQuickteller.TestCases.SendMoney#InvalidQTAccountNumberValidBankName_Transfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not transfer using Invalid QtAccountNumber started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.InvalidQTAccountNumberValidBankName_Transfer(SendMoney.java:254)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.rebirthQuickteller.TestCases.SendMoney#QTPhonenumberTransfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer to another QtAccount using phonenumber started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.QTPhonenumberTransfer(SendMoney.java:357)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">com.rebirthQuickteller.TestCases.SendMoney#QTQuicktagTransfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer to another QtAccount using Quicktag started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.QTQuicktagTransfer(SendMoney.java:336)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">com.rebirthQuickteller.TestCases.SendMoney#QtAccountTransferToGTBAccount</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer with QtAccount to GTBAccount started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferToGTBAccount(SendMoney.java:274)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">com.rebirthQuickteller.TestCases.SendMoney#QtAccountTransferWithInValidPIN</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer with QTAccount Using Invalid Pin started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>SendtoBankAccount Clicked Successfully<br/>Account Number entered successfully<br/>Search entered successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item:nth-child(1) span&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+*** Element info: {Using=css selector, value=.item:nth-child(1) span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.rebirthQuickteller.base.TestBase.chooseElement(TestBase.java:131)
+	at pages.SendMoneyPageObjects.SelectBankSearch(SendMoneyPageObjects.java:70)
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferWithInValidPIN(SendMoney.java:70)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">com.rebirthQuickteller.TestCases.SendMoney#QtAccountTransferWithValidDetails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform transfer with QTAccount started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>SendtoBankAccount Clicked Successfully<br/>Account Number entered successfully<br/>Search entered successfully</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item:nth-child(1) span&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+*** Element info: {Using=css selector, value=.item:nth-child(1) span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.rebirthQuickteller.base.TestBase.chooseElement(TestBase.java:131)
+	at pages.SendMoneyPageObjects.SelectBankSearch(SendMoneyPageObjects.java:70)
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferWithValidDetails(SendMoney.java:37)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">com.rebirthQuickteller.TestCases.SendMoney#TransferwithAmountbelow50naira</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not perform transfer with amount below #50 started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.TransferwithAmountbelow50naira(SendMoney.java:153)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">com.rebirthQuickteller.TestCases.SendMoney#ValidGTBAccountNumberInvalidBankName_Transfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not transfer using valid GTBAccount with different bank name started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.ValidGTBAccountNumberInvalidBankName_Transfer(SendMoney.java:299)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">com.rebirthQuickteller.TestCases.SendMoney#ValidQTAccountNumberInvalidBankName_Transfer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to validate user can not transfer using valid QtAccount with different bank name started !!!</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.NavigateHomePage(TestBase.java:247)
+	at com.rebirthQuickteller.TestCases.SendMoney.ValidQTAccountNumberInvalidBankName_Transfer(SendMoney.java:235)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">com.rebirthQuickteller.TestCases.SendMoney#FundAccountWithEcash</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test to perform Fund QTAccount with Ecash started !!!<br/>emailAddress entered successfully<br/>Password entered successfully<br/>SignIn button clicked successfully<br/>Add Money Button Clicked Successfully<br/>Amount Entered<br/>Pay Button Clicked Successfully<br/>PaywithEcash Clicked Successfully<br/>Successful FundTransfer Asserted successfully<br/>Receipt Viewed Successfully<br/>Test to perform Fund QTAccount with Ecash completed !!!</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AirtimeRecharge</h2><h3 id="m46">com.rebirthQuickteller.TestCases.AirtimeRecharge#setUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">=====Chrome Browser Session Started=====</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">com.rebirthQuickteller.TestCases.AirtimeRecharge#terminateSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">com.rebirthQuickteller.TestCases.AirtimeRecharge#CardAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">com.rebirthQuickteller.TestCases.AirtimeRecharge#InsufficentQTAccountAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">com.rebirthQuickteller.TestCases.AirtimeRecharge#InsufficientOneTouchSelfRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">com.rebirthQuickteller.TestCases.AirtimeRecharge#InvalidphoneNumberAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">com.rebirthQuickteller.TestCases.AirtimeRecharge#OneTouchAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">com.rebirthQuickteller.TestCases.AirtimeRecharge#QTAccount9mobileAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">com.rebirthQuickteller.TestCases.AirtimeRecharge#QTAccountAirtelAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">com.rebirthQuickteller.TestCases.AirtimeRecharge#QTAccountAirtimeRechargeWithInvalidTransactionPin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">com.rebirthQuickteller.TestCases.AirtimeRecharge#QTAccountGloAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">com.rebirthQuickteller.TestCases.AirtimeRecharge#QTAccountMtnAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">com.rebirthQuickteller.TestCases.AirtimeRecharge#ValidateAirtimeRechargeBelow50naira</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DataRecharge</h2><h3 id="m59">com.rebirthQuickteller.TestCases.DataRecharge#setUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">=====Chrome Browser Session Started=====</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">com.rebirthQuickteller.TestCases.DataRecharge#terminateSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">com.rebirthQuickteller.TestCases.DataRecharge#InsufficentQTAccountDataRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">com.rebirthQuickteller.TestCases.DataRecharge#InsufficientOneTouchSelfRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">com.rebirthQuickteller.TestCases.DataRecharge#InvalidphoneNumberAirtimeRecharge</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">com.rebirthQuickteller.TestCases.DataRecharge#QTAccountAirtimeRechargeWithInvalidTransactionPin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.rebirthQuickteller.base.TestBase.setUp(TestBase.java:119)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -4,15 +4,86 @@
   <listeners>
     <listener class-name="com.rebirthQuickteller.ExtentReport.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="Validate Login(failed)" verbose="0">
+  <test thread-count="5" name="SignUp(failed)" verbose="0">
     <classes>
       <class name="com.rebirthQuickteller.TestCases.SignUp">
         <methods>
           <include name="setUp"/>
           <include name="terminateSession"/>
           <include name="InvalidPhonenumberSignUp"/>
+          <include name="AlreadyExistPhonenumberSignUp"/>
         </methods>
       </class> <!-- com.rebirthQuickteller.TestCases.SignUp -->
     </classes>
-  </test> <!-- Validate Login(failed) -->
+  </test> <!-- SignUp(failed) -->
+  <test thread-count="5" name="ProfileUpdate(failed)" verbose="0">
+    <classes>
+      <class name="com.rebirthQuickteller.TestCases.UpdatePersonalDetails">
+        <methods>
+          <include name="setUp"/>
+          <include name="UpdateOccupation"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.rebirthQuickteller.TestCases.UpdatePersonalDetails -->
+    </classes>
+  </test> <!-- ProfileUpdate(failed) -->
+  <test thread-count="5" name="SendMoney(failed)" verbose="0">
+    <classes>
+      <class name="com.rebirthQuickteller.TestCases.SendMoney">
+        <methods>
+          <include name="FundAccountWithAmountbelow50naira"/>
+          <include name="InvalidGTBAccountNumberValidBankName_Transfer"/>
+          <include name="CardTransferWithValidDetails"/>
+          <include name="QtAccountTransferWithInValidPIN"/>
+          <include name="InvalidQTAccountNumberValidBankName_Transfer"/>
+          <include name="ValidGTBAccountNumberInvalidBankName_Transfer"/>
+          <include name="ValidQTAccountNumberInvalidBankName_Transfer"/>
+          <include name="QTPhonenumberTransfer"/>
+          <include name="QTQuicktagTransfer"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+          <include name="QtAccountTransferWithValidDetails"/>
+          <include name="FundAccountWithValidCardDetails"/>
+          <include name="QtAccountTransferToGTBAccount"/>
+          <include name="TransferwithAmountbelow50naira"/>
+          <include name="InsufficientFundTransferwithQTAccount"/>
+        </methods>
+      </class> <!-- com.rebirthQuickteller.TestCases.SendMoney -->
+    </classes>
+  </test> <!-- SendMoney(failed) -->
+  <test thread-count="5" name="AirtimeRecharge(failed)" verbose="0">
+    <classes>
+      <class name="com.rebirthQuickteller.TestCases.AirtimeRecharge">
+        <methods>
+          <include name="QTAccountGloAirtimeRecharge"/>
+          <include name="InsufficientOneTouchSelfRecharge"/>
+          <include name="OneTouchAirtimeRecharge"/>
+          <include name="QTAccountAirtimeRechargeWithInvalidTransactionPin"/>
+          <include name="InsufficentQTAccountAirtimeRecharge"/>
+          <include name="QTAccount9mobileAirtimeRecharge"/>
+          <include name="ValidateAirtimeRechargeBelow50naira"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+          <include name="CardAirtimeRecharge"/>
+          <include name="QTAccountMtnAirtimeRecharge"/>
+          <include name="InvalidphoneNumberAirtimeRecharge"/>
+          <include name="QTAccountAirtelAirtimeRecharge"/>
+        </methods>
+      </class> <!-- com.rebirthQuickteller.TestCases.AirtimeRecharge -->
+    </classes>
+  </test> <!-- AirtimeRecharge(failed) -->
+  <test thread-count="5" name="DataRecharge(failed)" verbose="0">
+    <classes>
+      <class name="com.rebirthQuickteller.TestCases.DataRecharge">
+        <methods>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+          <include name="QTAccountAirtimeRechargeWithInvalidTransactionPin"/>
+          <include name="InsufficientOneTouchSelfRecharge"/>
+          <include name="InvalidphoneNumberAirtimeRecharge"/>
+          <include name="InsufficentQTAccountDataRecharge"/>
+        </methods>
+      </class> <!-- com.rebirthQuickteller.TestCases.DataRecharge -->
+    </classes>
+  </test> <!-- DataRecharge(failed) -->
 </suite> <!-- Failed suite [rebirthQuicktellerSuite] -->

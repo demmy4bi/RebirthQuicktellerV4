@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="28.28" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="866.239" tests="65" errors="0" skipped="17" failures="19">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -25,9 +25,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\ademola.oyerinde\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1001979543657855220.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\ademola.oyerinde\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4329946409006713074.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\ademola.oyerinde\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ademola.oyerinde/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/ademola.oyerinde/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Users\ademola.oyerinde\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin;;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Users\ademola.oyerinde\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ademola.oyerinde/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/ademola.oyerinde/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Users\ademola.oyerinde\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin;;C:\Users\ademola.oyerinde\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -57,8 +57,440 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
-    <property name="m2e.build.project.data.socket.port" value="61027"/>
+    <property name="m2e.build.project.data.socket.port" value="63426"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="InvalidPhonenumberSignUp" classname="com.rebirthQuickteller.TestCases.SignUp" time="15.996"/>
+  <testcase name="AlreadyExistPhonenumberSignUp" classname="com.rebirthQuickteller.TestCases.SignUp" time="44.537">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Account already exists&apos;)] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,'Account already exists')] (tried for 30 second(s) with 500 milliseconds interval)
+	at com.rebirthQuickteller.TestCases.SignUp.AlreadyExistPhonenumberSignUp(SignUp.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'Account already exists')]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22b641c00547450cf801ecd520d64042
+*** Element info: {Using=xpath, value=//p[contains(.,'Account already exists')]}
+	at com.rebirthQuickteller.TestCases.SignUp.AlreadyExistPhonenumberSignUp(SignUp.java:33)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+=====Chrome Browser Session Started=====
+Test to verify user can't sign up with already exist phoneNumber started !!!
+SignUp button clicked successfully
+Sign up with phonenumber button clicked successfully
+Search entered successfully
+Country code selected successfully
+phoneNumber entered successfully
+ClickTermConditionButton clicked successfully
+SignUp button clicked successfully
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 23363
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 06, 2023 11:43:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="InvalidPhonenumberSignUp" classname="com.rebirthQuickteller.TestCases.SignUp" time="69.94">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item &gt; div&quot;}&#10;  (Session info: chrome=119.0.6045.160)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22b641c00547450cf801ecd520d64042&#10;*** Element info: {Using=css selector, value=.item &gt; div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".item > div"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22b641c00547450cf801ecd520d64042
+*** Element info: {Using=css selector, value=.item > div}
+	at com.rebirthQuickteller.TestCases.SignUp.InvalidPhonenumberSignUp(SignUp.java:46)
+</failure>
+    <system-out><![CDATA[Test to verify user can't signup using invalid phonenumber started !!!
+
+Navigated to HomePage!!!  
+SignUp button clicked successfully
+Sign up with phonenumber button clicked successfully
+Search entered successfully
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidPasswordCheck1" classname="com.rebirthQuickteller.TestCases.SignUp" time="14.063"/>
+  <testcase name="InvalidPasswordCheck2" classname="com.rebirthQuickteller.TestCases.SignUp" time="0.812"/>
+  <testcase name="InvalidPasswordCheck3" classname="com.rebirthQuickteller.TestCases.SignUp" time="0.887"/>
+  <testcase name="InvalidPasswordCheck4" classname="com.rebirthQuickteller.TestCases.SignUp" time="1.026"/>
+  <testcase name="InvalidPasswordCheck5" classname="com.rebirthQuickteller.TestCases.SignUp" time="0.86"/>
+  <testcase name="InvalidPasswordCheck6" classname="com.rebirthQuickteller.TestCases.SignUp" time="0.857"/>
+  <testcase name="CheckFirstNameIsRequiredToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="25.788"/>
+  <testcase name="CheckLastNameIsRequiredToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="41.082"/>
+  <testcase name="CheckGenderIsRequiredToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="42.377"/>
+  <testcase name="CheckDateOfBirthIsRequiredToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="30.407"/>
+  <testcase name="CheckPinMisMatchisNotPermmittedToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="40.495"/>
+  <testcase name="CheckPinRepetitiveisNotPermmittedToCompleteOnboarding" classname="com.rebirthQuickteller.TestCases.SignUp" time="50.325"/>
+  <testcase name="SignUpwithPhoneNumber" classname="com.rebirthQuickteller.TestCases.SignUp" time="33.574"/>
+  <testcase name="LoginWithInvalidEmailInput" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="1.243"/>
+  <testcase name="LoginWithUnregisteredEmail" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="2.732"/>
+  <testcase name="EmailLoginWithEmptyEmailAddressField" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="0.996"/>
+  <testcase name="EmailLoginWithEmptyPasswordField" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="1.065"/>
+  <testcase name="EmailLoginwithInvalidPassword" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="6.92"/>
+  <testcase name="EmailLoginwithValidcredentials" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="6.827"/>
+  <testcase name="ValidateEmailLoginWithRememberMe" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="15.19"/>
+  <testcase name="LoginWithInvalidPhoneNumberInput" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="0.904"/>
+  <testcase name="LoginWithUnRegisteredPhonenumber" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="4.707"/>
+  <testcase name="LoginWithEmptyPhonenumberField" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="1.119"/>
+  <testcase name="phoneNumberLoginWithEmptyPasswordField" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="0.98"/>
+  <testcase name="PhoneNumberLoginWithInvalidPassword" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="6.449"/>
+  <testcase name="PhoneNumberLoginWithValidCredentials" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="8.842"/>
+  <testcase name="ValidatePhonenumberLoginWithRememberMe" classname="com.rebirthQuickteller.TestCases.ValidateLogin" time="17.062"/>
+  <testcase name="UpdateOccupation" classname="com.rebirthQuickteller.TestCases.UpdatePersonalDetails" time="50.367">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,&apos;Profile updated!&apos;)] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(.,'Profile updated!')] (tried for 30 second(s) with 500 milliseconds interval)
+	at com.rebirthQuickteller.TestCases.UpdatePersonalDetails.UpdateOccupation(UpdatePersonalDetails.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'Profile updated!')]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca75ce45a29aa5db1917be1888d1b98c
+*** Element info: {Using=xpath, value=//p[contains(.,'Profile updated!')]}
+	at com.rebirthQuickteller.TestCases.UpdatePersonalDetails.UpdateOccupation(UpdatePersonalDetails.java:38)
+</failure>
+    <system-out><![CDATA[=====Chrome Browser Session Started=====
+Test to verify user can update occupation started !!!
+Sign In with PhoneNumber button clicked successfully	
+phoneNumber entered successfully
+Password entered successfully
+SignIn button clicked successfully
+Navigating to homepage dashboard  istrue
+Account & Settings button clicked
+ProfiledetailsDropdown button clicked
+Edit button clicked
+occupation entered successfully
+Save button clicked
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 29163
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 06, 2023 11:52:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="UpdateAddress" classname="com.rebirthQuickteller.TestCases.UpdatePersonalDetails" time="31.701"/>
+  <testcase name="QtAccountTransferWithValidDetails" classname="com.rebirthQuickteller.TestCases.SendMoney" time="50.311">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item:nth-child(1) span&quot;}&#10;  (Session info: chrome=119.0.6045.160)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f&#10;*** Element info: {Using=css selector, value=.item:nth-child(1) span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".item:nth-child(1) span"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+*** Element info: {Using=css selector, value=.item:nth-child(1) span}
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferWithValidDetails(SendMoney.java:37)
+</failure>
+    <system-out><![CDATA[=====Chrome Browser Session Started=====
+Test to perform transfer with QTAccount started !!!
+emailAddress entered successfully
+Password entered successfully
+SignIn button clicked successfully
+SendtoBankAccount Clicked Successfully
+Account Number entered successfully
+Search entered successfully
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 21144
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 06, 2023 11:54:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="QtAccountTransferWithInValidPIN" classname="com.rebirthQuickteller.TestCases.SendMoney" time="63.791">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.item:nth-child(1) span&quot;}&#10;  (Session info: chrome=119.0.6045.160)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f&#10;*** Element info: {Using=css selector, value=.item:nth-child(1) span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".item:nth-child(1) span"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+*** Element info: {Using=css selector, value=.item:nth-child(1) span}
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferWithInValidPIN(SendMoney.java:70)
+</failure>
+    <system-out><![CDATA[Test to perform transfer with QTAccount Using Invalid Pin started !!!
+
+Navigated to HomePage!!!  
+emailAddress entered successfully
+Password entered successfully
+SignIn button clicked successfully
+SendtoBankAccount Clicked Successfully
+Account Number entered successfully
+Search entered successfully
+]]></system-out>
+  </testcase>
+  <testcase name="FundAccountWithEcash" classname="com.rebirthQuickteller.TestCases.SendMoney" time="51.608"/>
+  <testcase name="FundAccountWithAmountbelow50naira" classname="com.rebirthQuickteller.TestCases.SendMoney" time="20.514">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.FundAccountWithAmountbelow50naira(SendMoney.java:110)
+</failure>
+    <system-out><![CDATA[Test to validate user cannot perform Fund QtAccount with amount below #50 started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="InsufficientFundTransferwithQTAccount" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.285">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.InsufficientFundTransferwithQTAccount(SendMoney.java:127)
+</failure>
+    <system-out><![CDATA[Test to validate user can not perform transfer with insuffient QT account balance started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="TransferwithAmountbelow50naira" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.268">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.TransferwithAmountbelow50naira(SendMoney.java:153)
+</failure>
+    <system-out><![CDATA[Test to validate user can not perform transfer with amount below #50 started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="FundAccountWithValidCardDetails" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.184">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.FundAccountWithValidCardDetails(SendMoney.java:174)
+</failure>
+    <system-out><![CDATA[Test to perform Fund QTAccount with Card started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="CardTransferWithValidDetails" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.283">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.CardTransferWithValidDetails(SendMoney.java:201)
+</failure>
+    <system-out><![CDATA[Test to perform transfer with card started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="ValidQTAccountNumberInvalidBankName_Transfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.391">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.ValidQTAccountNumberInvalidBankName_Transfer(SendMoney.java:235)
+</failure>
+    <system-out><![CDATA[Test to validate user can not transfer using valid QtAccount with different bank name started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidQTAccountNumberValidBankName_Transfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.304">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.InvalidQTAccountNumberValidBankName_Transfer(SendMoney.java:254)
+</failure>
+    <system-out><![CDATA[Test to validate user can not transfer using Invalid QtAccountNumber started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="QtAccountTransferToGTBAccount" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.244">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.QtAccountTransferToGTBAccount(SendMoney.java:274)
+</failure>
+    <system-out><![CDATA[Test to perform transfer with QtAccount to GTBAccount started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="ValidGTBAccountNumberInvalidBankName_Transfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.239">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.ValidGTBAccountNumberInvalidBankName_Transfer(SendMoney.java:299)
+</failure>
+    <system-out><![CDATA[Test to validate user can not transfer using valid GTBAccount with different bank name started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="InvalidGTBAccountNumberValidBankName_Transfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.242">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.InvalidGTBAccountNumberValidBankName_Transfer(SendMoney.java:318)
+</failure>
+    <system-out><![CDATA[Test to validate user can not transfer using Invalid GTBAccountNumber started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="QTQuicktagTransfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.356">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.QTQuicktagTransfer(SendMoney.java:336)
+</failure>
+    <system-out><![CDATA[Test to perform transfer to another QtAccount using Quicktag started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="QTPhonenumberTransfer" classname="com.rebirthQuickteller.TestCases.SendMoney" time="0.272">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798a6112e840bc6fd940834ced7f215f" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 798a6112e840bc6fd940834ced7f215f
+	at com.rebirthQuickteller.TestCases.SendMoney.QTPhonenumberTransfer(SendMoney.java:357)
+</failure>
+    <system-out><![CDATA[Test to perform transfer to another QtAccount using phonenumber started !!!
+]]></system-out>
+  </testcase>
+  <testcase name="setUp" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="3.478">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce92a4c19d4bdd5425fb24994ca2a767
+</failure>
+    <system-out><![CDATA[=====Chrome Browser Session Started=====
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 11221
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 06, 2023 11:57:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="InvalidphoneNumberAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="QTAccountAirtimeRechargeWithInvalidTransactionPin" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="QTAccountGloAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="QTAccountMtnAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="QTAccountAirtelAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="QTAccount9mobileAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="InsufficentQTAccountAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="ValidateAirtimeRechargeBelow50naira" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="OneTouchAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="InsufficientOneTouchSelfRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="CardAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce92a4c19d4bdd5425fb24994ca2a767"/>
+  </testcase>
+  <testcase name="terminateSession" classname="com.rebirthQuickteller.TestCases.AirtimeRecharge" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="6.944">
+    <failure message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33eddebde34727c1f6ad1ecf228d67b0" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ISW-230323-1218', ip: '192.168.1.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eddebde34727c1f6ad1ecf228d67b0
+</failure>
+    <system-out><![CDATA[=====Chrome Browser Session Started=====
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 4724
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 06, 2023 11:57:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="InvalidphoneNumberAirtimeRecharge" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33eddebde34727c1f6ad1ecf228d67b0"/>
+  </testcase>
+  <testcase name="QTAccountAirtimeRechargeWithInvalidTransactionPin" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33eddebde34727c1f6ad1ecf228d67b0"/>
+  </testcase>
+  <testcase name="InsufficentQTAccountDataRecharge" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33eddebde34727c1f6ad1ecf228d67b0"/>
+  </testcase>
+  <testcase name="InsufficientOneTouchSelfRecharge" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="0">
+    <skipped message="unknown error: net::ERR_INTERNET_DISCONNECTED&#10;  (Session info: chrome=119.0.6045.160)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ISW-230323-1218&apos;, ip: &apos;192.168.1.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADEMOL~1.OYE\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 33eddebde34727c1f6ad1ecf228d67b0"/>
+  </testcase>
+  <testcase name="terminateSession" classname="com.rebirthQuickteller.TestCases.DataRecharge" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
